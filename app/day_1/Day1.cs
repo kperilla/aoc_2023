@@ -2,15 +2,15 @@ namespace AdventOfCodeRunner
 {
     public class Day1
     {
-        public static int PartA()
+        public static string PartA(string inputString)
         {
             Console.WriteLine("Part A");
-            return 1;
+            return "a";
         }
-        public static int PartB()
+        public static string PartB(string inputString)
         {
             Console.WriteLine("Part B");
-            return 1;
+            return "a";
         }
     }
 }
