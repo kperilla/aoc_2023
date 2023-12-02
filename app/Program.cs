@@ -4,7 +4,7 @@
     {
         const string urlTemplate = "https://adventofcode.com/2023/day/{0}/input";
         const string sessionPath = "./session.key";
-        static Dictionary<(int, string), Func<string, string>> functionDictionary = new Dictionary<(int, string), Func<string, string>>
+        static Dictionary<(int, string), Action<string>> functionDictionary = new Dictionary<(int, string), Action<string>>
             {
                 {(1, "a"), Day1.PartA},
                 {(1, "b"), Day1.PartB}
@@ -17,9 +17,9 @@
             string url = String.Format(urlTemplate, dayNum);
             string sessionKey = SessionManager.ReadSessionFile(sessionPath);
             string inputString = await AocHttpClient.MakeGetRequest(url, sessionKey);
-            Func<string, string> funcToRun = functionDictionary[(dayNum, part)];
+            Action<string> funcToRun = functionDictionary[(dayNum, part)];
 
-            Console.WriteLine(funcToRun(inputString));
+            funcToRun(inputString);
         }
     }
 }
