@@ -5,7 +5,7 @@ namespace AdventOfCodeRunner
 {
     public class Day1
     {
-        static string[] numberStringsJustDigits = {
+        readonly static string[] numberStringsJustDigits = {
             "1",
             "2",
             "3",
@@ -16,7 +16,7 @@ namespace AdventOfCodeRunner
             "8",
             "9"
         };
-        static string[] numberStringsWithSpelled = {
+        readonly static string[] numberStringsWithSpelled = {
             "1",
             "2",
             "3",

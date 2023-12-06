@@ -402,3 +402,7 @@ FodyWeavers.xsd
 
 # Creds
 *.key
+
+# VS Files
+Properties
+*.sln

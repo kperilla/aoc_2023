@@ -7,7 +7,9 @@
         static Dictionary<(int, string), Action<string>> functionDictionary = new Dictionary<(int, string), Action<string>>
             {
                 {(1, "a"), Day1.PartA},
-                {(1, "b"), Day1.PartB}
+                {(1, "b"), Day1.PartB},
+                {(2, "a"), Day2.PartA},
+                {(2, "b"), Day2.PartB}
             };
 
         static async Task Main(string[] args)
