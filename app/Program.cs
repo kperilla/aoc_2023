@@ -9,7 +9,9 @@
                 {(1, "a"), Day1.PartA},
                 {(1, "b"), Day1.PartB},
                 {(2, "a"), Day2.PartA},
-                {(2, "b"), Day2.PartB}
+                {(2, "b"), Day2.PartB},
+                {(3, "a"), Day3.PartA},
+                {(3, "b"), Day3.PartB}
             };
 
         static async Task Main(string[] args)
